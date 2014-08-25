@@ -30,7 +30,8 @@ import org.kohsuke.MetaInfServices;
 import org.lorislab.transformer.api.service.AdapterService;
 
 /**
- *
+ * The RestEasy2 adapter service.
+ * 
  * @author Andrej Petras
  */
 @MetaInfServices

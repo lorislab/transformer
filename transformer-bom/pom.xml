@@ -25,6 +25,11 @@
 				<artifactId>transformer-adapter-resteasy</artifactId> 
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.lorislab.transformer</groupId>
+				<artifactId>transformer-adapter-gson</artifactId> 
+				<version>${project.version}</version>
+			</dependency>			
 		</dependencies>
 	</dependencyManagement>
 	

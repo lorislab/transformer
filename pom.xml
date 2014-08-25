@@ -9,7 +9,8 @@
         
 	<modules>
 		<module>transformer-api</module>
-		<module>transformer-adapter-resteasy</module>
+		<module>transformer-adapter-resteasy</module>		
+		<module>transformer-adapter-gson</module>
 		<module>transformer-bom</module>
 	</modules>
 	
@@ -67,6 +68,22 @@
 				<scope>provided</scope>
 				<version>2.3.7.Final</version>
 			</dependency>
+			
+			<!-- GSON -->
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.3</version>
+			</dependency>
+
+			
+			<!-- TEST -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>				
 		</dependencies>
 	</dependencyManagement>
 
@@ -106,7 +123,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.12.4</version>
 					<configuration>
-						<skipTests>true</skipTests>
+						<skipTests>false</skipTests>
 					</configuration>
 				</plugin>
 				<plugin>
